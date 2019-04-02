@@ -1,5 +1,17 @@
 # This is a simple http server
- Simple import the project and run it using docker compose
+
+## Project description
+
+ This is a simple project to implement go http webservers and run it using docker docker
  
- docker-compose up -d
+ ### How it works
+
+ The docker build the project using Dockerfile.
+ Run the project using
+
+ docker-compose up -d 
+
+ ### Checking the logs
+
+ docker logs go-webserver
 
