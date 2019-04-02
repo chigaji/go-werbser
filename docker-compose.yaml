@@ -1,0 +1,13 @@
+version: '2'
+services: 
+  go-webserver:
+    container_name: go-webserver
+    build: .
+    command: go run main.go
+    volumes: 
+      - ./src:/go/src/app
+    working_dir: /go/src/app
+    ports:
+      - "3030:3001"
+    environment: 
+      PORT: 3001
